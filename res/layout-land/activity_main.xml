@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="30dp" >
+
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" android:baselineAligned="false">
+
+            <ImageButton
+                android:id="@+id/serviceToggle"
+                android:layout_width="match_parent"
+                android:layout_weight = "1"
+                android:layout_height="0dp"
+                                android:adjustViewBounds="true"
+                
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_start_service" />
+
+            <TextView
+                android:id="@+id/serviceToggleLabel"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:layout_weight="1" >
+
+         <LinearLayout
+             android:id="@+id/listenLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/listenButton"
+                android:layout_width="match_parent"
+                android:layout_weight = "1"
+                android:adjustViewBounds="true"
+                
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_listen" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Listen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hotwordLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/hotwordToggle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_listen" />
+
+            <TextView
+                android:id="@+id/hotwordToggleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Hotword On" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/waveLayout"
+            android:layout_width="0dp"
+            android:layout_weight = "1"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/waveToggle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_wave_green" />
+
+             <TextView
+                 android:id="@+id/waveToggleLabel"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center_horizontal"
+                 android:text="Hand Wave On" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

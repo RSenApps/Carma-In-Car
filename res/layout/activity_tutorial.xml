@@ -1,0 +1,22 @@
+<LinearLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height = "match_parent" xmlns:app="http://schemas.android.com/apk/res/com.RSen.InCar">
+    <android.support.v4.view.ViewPager
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="0dp" />
+<com.viewpagerindicator.LinePageIndicator
+	android:id="@+id/titles"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+	app:unselectedColor="#FF888888"
+	app:selectedColor="#FF8800"
+	android:layout_marginBottom="20dp"
+	 android:padding="5dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        app:strokeWidth="4dp"
+        app:lineWidth="30dp"/>
+        </LinearLayout>
+

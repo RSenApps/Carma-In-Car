@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Carma</string>
+    <string name="title_activity_activation">Carma</string>
+    <string name="commute_help">Program a commute to be able to activate multiple commands
+        without the hassle of saying each one. Simply say Commute + (name of commute)
+        to navigate, listen to music, and read the ETA. If you only wish to do some of these
+        actions just leave the field blank.</string>
+    <string name="correction_help">Correction Phrases are a way to change what speech
+        recognition interpets. Whenever speech recognition matches your phrase, it will
+        automatically be replaced by what you define. A common use for Correction Phrases
+        are to fix a common mistake of speech recognition. For example, if it commonly
+        mistakes "navigate to ohm" for "navigate to home", then you would create a correction
+        phrase of "home->ohm". Correction Phrases can also be used to automatically input
+        addresses and contacts. For example "home->1 main street, Seattle" or 
+        "Bob->555-555-5555".</string>
+    <string name="command_help">Command List:\n
+        (input)\n
+* optional, not including will use last location, sender, or recipient\n\n
+
+Testing:\n
+-Send Feedback/Feedback/Report Bug + (message)\n\n
+
+Communication:\n
+-Call number/Dial number/Call/Dial + (number/contact name)*\n
+-Send Text/Send message + to + (recipient name/number)* + message + (message text)\n
+-Text + (recipient name/number)* + message + (message text)\n
+-Reply with text + message {uses last sender or recipient}\n
+-Send email + to + (recipient name) + subject + (subject) + message + (message) {will send email as CarmaAndroid@gmail.com and can\'t recognize email addresses}\n
+-Send ETA + to + (recipient name)*\n\n
+
+App control:\n
+-Cancel\n
+-Shutdown/Turn off\n\n
+
+Music:\n
+-Pause\n
+-Play\n
+-Skip\n
+-Next\n
+-Listen to/Listen + (search phrase Artist/Album/Song/etc.)\n\n
+
+Sound:\n
+-Mute\n
+-Unmute\n\n
+
+Navigation:\n
+-Navigate to/Navigate/Go to/Directions to/Directions for + (place name/address)*\n
+-Set Destination/Set Destination to + (place name/address)\n
+-How much longer/Remaining time/Time to destination {uses last location}\n
+-How much further/Remaining distance/Distance to destination {uses last location}\n
+-ETA/Time of Arrival {uses last location}\n\n
+
+Tasker\n
+-Add/Override any account with Tasker extensibility</string>
+    <string name="title_activity_tutorial">Carma Tutorial</string>
+    <string name="welcome">Carma is NOT a Siri clone. You cannot have a "converstion" with it. \n\nBut once you learn how to talk to it, Carma will make far fewer mistakes!</string>
+    <string name="speech_recognition">Carma\'s speech recognition is dependent on device and network conditions.\nTo ensure optimal results:\n   1. Use a bluetooth device or position the phone\'s mic close to your mouth.\n\n   2. Don\'t slow down! Carma works best if you speak at a normal pace.\n\n   3. Ensure Personalized Recognition is turned on. (System Settings)\n\n   4. If you have a problem use Corrective Phrases (App Settings)</string>
+    <string name="starting_carma">1. Just say "Carma" (will not work on slow connections)\n\n2. Wave your hand over the front camera.\n\n3. Press the button on your bluetooth device (must be paired and only for supported devices) </string>
+
+</resources>

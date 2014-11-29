@@ -1,0 +1,62 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:robobunny="http://robobunny.com">
+<PreferenceCategory android:title = "General">
+      <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="start_on_bluetooth"
+        android:title="Start on Bluetooth"
+        android:summary="Start Carma when a bluetooth headset is connected" />
+      <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="stop_on_bluetooth"
+        android:title="Stop on Bluetooth Disconnect"
+        android:summary="Stop Carma when a bluetooth headset is disconnected" />
+     <Preference 
+	    android:key="commutes"
+	    android:title = "Commutes"
+	    android:summary = "Do what you do everyday by speaking less" />
+	<Preference 
+	    android:key="correction_phrases"
+	    android:title = "Correction Phrases"
+	    android:summary = "Correct a misinterpeted phrase (command, contact, etc.)" />
+	<Preference 
+	    android:key="tasker"
+	    android:title = "Tasker Commands"
+	    android:summary = "Custom commands using Tasker" />
+</PreferenceCategory>
+
+<PreferenceCategory android:title="Volumes">
+    <com.RSen.InCar.SeekBarPreference
+            android:key="volume_media"
+                android:title="Media Volume"
+                android:summary="Volume: "
+                android:defaultValue="50"
+                android:max="100"
+                robobunny:min="0"
+            robobunny:unitsLeft=""
+                robobunny:unitsRight=" %"
+            />
+  	 	<com.RSen.InCar.SeekBarPreference
+            android:key="volume_bluetooth"
+                android:title="Bluetooth Volume"
+                android:summary="Volume: "
+                android:defaultValue="50"
+                android:max="100"
+                robobunny:min="0"
+            robobunny:unitsLeft=""
+                robobunny:unitsRight=" %"
+            />
+</PreferenceCategory>   
+<PreferenceCategory android:title="Notifications">
+        <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notifications_call"
+        android:title="Announce incoming calls" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notifications_text"
+        android:title="Read incoming texts" />
+</PreferenceCategory>  
+  	
+    
+</PreferenceScreen>
